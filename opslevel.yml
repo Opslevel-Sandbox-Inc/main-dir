@@ -1,0 +1,113 @@
+---
+version: 1
+service:
+  name: Catalog Service
+  lifecycle: generally_available
+  tier: tier_1
+  product:
+  owner: order_management_team
+  system: catalog
+  language: Ruby
+  framework: Rails
+  description: Used to display information about what products are available for purchase
+    and in what quantities.
+  aliases:
+  - catalog-service
+  tags:
+  - key: db
+    value: cassandra
+  - key: db
+    value: mysql
+  - key: pd_id
+    value: P9QFF76
+  - key: resource_provider
+    value: aws
+  - key: vault
+    value: Ta
+  repositories:
+  - name: OpsLevel-sales-demo/scala-monorepo
+    path: "/catalog-service"
+    provider: github
+  - name: OpsLevel-sales-demo/Catalog-Service
+    path: "/"
+    provider: github
+  tools:
+  - name: Datadog
+    category: metrics
+    url: https://app.datadoghq.com/dashboards/catalog-service
+    environment:
+  - name: Splunk
+    category: logs
+    url: https://bigriver.cloud.splunk.com/en-US/app/search/?q=search%20index%3Dcatalog
+    environment:
+  - name: Admin Page
+    category: admin
+    url: https://bigriver.admin.com/shopping-cart
+    environment:
+  - name: Confluence
+    category: runbooks
+    url: https://bigriver.atlassian.com/confluence/services/catalog-service
+    environment:
+  - name: Gremlin
+    category: other
+    url: https://gremlin.com/shopping-cart
+    environment:
+  - name: XDB MySQL
+    category: other
+    url: https://infra.bigriver.com/mysql
+    environment:
+  - name: Twistlock
+    category: other
+    url: https://bigriver.twistlock.com/stuff
+    environment:
+  - name: Kubernetes
+    category: orchestrator
+    url: https://deploy.bigriver.com/catalog
+    environment:
+  - name: Sentry
+    category: errors
+    url: https://bigriver.sentry.com/catalog_service/production
+    environment: Production
+  - name: Sentry
+    category: errors
+    url: https://bigriver.sentry.com/supportconsole_service/staging
+    environment: Staging
+  - name: Pingdom
+    category: health_checks
+    url: https://bigriver.pingdom.com/catalog
+    environment:
+  - name: PagerDuty
+    category: incidents
+    url: https://opslevel.pagerduty.com/services/P88H2N0
+    environment: Production
+  - name: Example
+    category: code
+    url: https://www.example.com
+    environment:
+  - name: Octopus Deploy
+    category: deployment
+    url: https://octopus.com/app/admin/managing-infrastructure/deploys/
+    environment:
+  - name: Pagerduty
+    category: incidents
+    url: https://adgdemo.pagerduty.com/service-directory/P9QFF76
+    environment:
+  dependencies:
+  - alias: product_image_service
+  - alias: tls_certificate_manager
+  - alias: image_optimization
+  alert_sources:
+  - type: pagerduty
+    external_id: P9QFF76
+  - type: datadog
+    external_id: '46542883'
+  - type: datadog
+    external_id: '65706639'
+  - type: datadog
+    external_id: '114782018'
+  properties:
+    code_freeze_date:
+    container_image:
+    dast_findings:
+    risk_assessment: Failed
+    vpc_enabled:
