@@ -94,6 +94,7 @@ service:
     environment:
   dependencies:
   - alias: product_image_service
+  - alias: mobile_app
   alert_sources:
   - type: pagerduty
     external_id: P9QFF76
