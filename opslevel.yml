@@ -94,8 +94,6 @@ service:
     environment:
   dependencies:
   - alias: product_image_service
-  - alias: tls_certificate_manager
-  - alias: image_optimization
   alert_sources:
   - type: pagerduty
     external_id: P9QFF76
