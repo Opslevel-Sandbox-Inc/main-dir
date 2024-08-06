@@ -96,8 +96,6 @@ service:
   - alias: product_image_service
   - alias: mobile_app
   alert_sources:
-  - type: pagerduty
-    external_id: P9QFF76
   - type: datadog
     external_id: '46542883'
   - type: datadog
