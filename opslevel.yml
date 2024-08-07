@@ -25,17 +25,14 @@ service:
   - key: vault
     value: Ta
   repositories:
-  - name: MurielGordon/scala-monorepo
-    path: "/"
-    provider: github
-  - name: MurielGordon/catalog-service
-    path: "/"
-    provider: github
-  repositories:
   - name: OpsLevel-sales-demo/catalog-service
     path: "/"
     provider: github
     display_name: catalog-service
+  - name: OpsLevel-sales-demo/scala-monorepo
+    path: "/"
+    provider: github
+    display_name: scala-monorepo
   tools:
   - name: Datadog
     category: metrics
