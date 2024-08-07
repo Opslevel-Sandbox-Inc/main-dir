@@ -95,3 +95,5 @@ service:
   dependencies:
   - alias: product_image_service
   - alias: mobile_app
+  alert sources:
+  properties:
