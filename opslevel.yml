@@ -25,11 +25,11 @@ service:
   - key: vault
     value: Ta
   repositories:
-  - name: OpsLevel-sales-demo/catalog-service
+  - name: Opslevel-Sandbox-Inc/catalog-service
     path: "/"
     provider: github
     display_name: catalog-service
-  - name: OpsLevel-sales-demo/scala-monorepo
+  - name: Opslevel-Sandbox-Inc/scala-monorepo
     path: "/"
     provider: github
     display_name: scala-monorepo
