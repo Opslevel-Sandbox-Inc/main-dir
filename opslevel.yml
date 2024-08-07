@@ -31,6 +31,11 @@ service:
   - name: MurielGordon/catalog-service
     path: "/"
     provider: github
+  repositories:
+  - name: OpsLevel-sales-demo/catalog-service
+    path: "/"
+    provider: github
+    display_name: catalog-service
   tools:
   - name: Datadog
     category: metrics
