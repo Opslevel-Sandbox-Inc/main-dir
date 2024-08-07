@@ -95,16 +95,3 @@ service:
   dependencies:
   - alias: product_image_service
   - alias: mobile_app
-  alert_sources:
-  - type: datadog
-    external_id: '46542883'
-  - type: datadog
-    external_id: '65706639'
-  - type: datadog
-    external_id: '114782018'
-  properties:
-    code_freeze_date:
-    container_image:
-    dast_findings:
-    risk_assessment: Failed
-    vpc_enabled:
