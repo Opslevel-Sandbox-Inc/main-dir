@@ -6,7 +6,7 @@ service:
   tier: tier_1
   product:
   owner: order_management_team
-  system: catalog
+  system: Catalog
   language: Ruby
   framework: Rails
   description: Used to display information about what products are available for purchase
