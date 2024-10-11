@@ -32,7 +32,7 @@ service:
   - name: Opslevel-Sandbox-Inc/scala-monorepo/catalog-service
     path: "/"
     provider: github
-    display_name: scala-monorepo
+    display_name: scala-monorepo/catalog-service
   tools:
   - name: Datadog
     category: metrics
