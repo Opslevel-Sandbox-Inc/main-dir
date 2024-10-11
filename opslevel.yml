@@ -25,10 +25,10 @@ service:
   - key: vault
     value: Ta
   repositories:
-  - name: Opslevel-Sandbox-Inc/catalog-service
+  - name: Opslevel-Sandbox-Inc/main-dir
     path: "/"
     provider: github
-    display_name: catalog-service
+    display_name: main-dir
     
   tools:
   - name: Datadog
